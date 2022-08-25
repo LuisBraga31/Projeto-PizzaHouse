@@ -52,7 +52,6 @@ header {
 section {
     display: flex;
     justify-content: center;
-   
     gap: 20px;
     position: absolute;
     width: 99.5%;
