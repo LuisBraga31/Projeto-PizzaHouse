@@ -7,10 +7,7 @@ body {
 /* Header */
 
 header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
+   
     position: absolute;
     width: 100%;
     height: 100px;
@@ -30,7 +27,7 @@ header {
 
 .header-caixa nav {
     position: absolute;
-    width: 236px;
+    width: 256px;
     height: 19px;
     left: 70%;
     top: 40px;
@@ -43,8 +40,9 @@ header {
     color: #F3F3F3;
 }
 
-.header-caixa a {
-    text-decoration: none;
+.header-caixa span {
+    font-size: 16px;
+    
 }
 
 /* Section */
@@ -63,13 +61,13 @@ section {
     background-image: url(../imgs/delivery.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-
+    
     width: 490px;
     height: 350px;
 }
 
 .pizza h2 {
-    position: absolute;
+    position: relative;
     width: 485px;
     height: 28px;
 
@@ -89,25 +87,25 @@ section {
 }
 
 .cardapio {
-    width: 491px;
+    width: 490px;
     height: 350px;
     background: #FFFFFF;
     border-radius: 5px;
 }
 
 .cardapio img {
-    position: absolute;
+    position: relative;
     width: 92px;
     height: 129px;
     left: 68%;
-    top: 117px;
+    top: 10px;
 }
 
 .cardapio h2 {
-    position: absolute;
+    position: relative;
     width: 205px;
     height: 28px;
-    left: 58%;
+    left: 32%;
     top: 5px;
     
     font-family: 'Roboto';
@@ -120,10 +118,10 @@ section {
 }
 
 .cardapio p {
-    position: absolute;
+    position: relative;
     width: 110.44px;
     height: 23px;
-    left: 55%;
+    left: 15%;
     top: 75px;
 
     font-family: 'Roboto';
@@ -136,11 +134,11 @@ section {
 }
 
 .cardapio ol {
-    position: absolute;
+    position: relative;
     width: 135px;
     height: 19px;
-    left: 52%;
-    top: 130px;
+    left: 5%;
+    top: 70px;
 
     font-family: 'Roboto';
     font-style: normal;
@@ -154,10 +152,6 @@ section {
 /* Footer */
 
 footer {
-    display: flex;
-    justify-content: space-between;
-    flex: auto;
-
     position: absolute;
     width: 100%;
     height: 150px;
@@ -193,6 +187,6 @@ footer {
     color: #F3F3F3;
 }
 
-.footer-caixa a {
+.footer-caixa span {
     text-decoration: none;
 }
