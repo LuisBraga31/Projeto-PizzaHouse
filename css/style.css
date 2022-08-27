@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
 body {
     background: #F3F3F3;
 }
@@ -7,30 +13,26 @@ body {
 /* Header */
 
 header {
-   
-    position: absolute;
     width: 100%;
     height: 100px;
-    left: 0px;
-    top: 0px;
     background: #222222;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .header-caixa img {
-    position: absolute;
-    width: 234px;
-    height: 80px;
-    left: 20px;
-    top: 10px;
+    width: auto;
+    padding-left: 20px;
 }
 
 .header-caixa nav {
-    position: absolute;
-    width: 256px;
-    height: 19px;
-    left: 70%;
-    top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-right: 20px;
 
     font-family: 'Roboto';
     font-style: normal;
@@ -40,9 +42,15 @@ header {
     color: #F3F3F3;
 }
 
-.header-caixa span {
-    font-size: 16px;
-    
+.header-caixa nav > a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #FFFFFF
+}
+
+.header-caixa nav > a:hover{
+    color: #39b24a;
+    font-size: 18px;
 }
 
 /* Section */
@@ -51,11 +59,15 @@ section {
     display: flex;
     justify-content: center;
     gap: 20px;
-    position: absolute;
-    width: 99.5%;
-    height: 460px;
-    top: 20%;
+    
+    width: 98%;
+    height: 400px;
+    margin: 15px;
+    margin-top: 30px;
+    
 }
+
+/* Section - Pizza */
 
 .pizza {
     background-image: url(../imgs/delivery.jpg);
@@ -70,6 +82,7 @@ section {
     position: relative;
     width: 485px;
     height: 28px;
+    top: 5%;
 
     font-family: 'Roboto';
     font-style: normal;
@@ -77,7 +90,6 @@ section {
     font-size: 24px;
     line-height: 0px;
     text-align: center;
-
     color: #FC200C;
 
 }
@@ -85,6 +97,8 @@ section {
 .pizza span {
     color: #FFFFFF;
 }
+
+/* Section - Cardapio */
 
 .cardapio {
     width: 490px;
@@ -95,33 +109,26 @@ section {
 
 .cardapio img {
     position: relative;
-    width: 92px;
-    height: 129px;
-    left: 68%;
-    top: 10px;
+    left: 70%;
+    bottom: 80px;
 }
 
 .cardapio h2 {
     position: relative;
-    width: 205px;
-    height: 28px;
-    left: 32%;
-    top: 5px;
+    left: 30%;
+    top: 35px;
     
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
-
     color: #FC200C;
 }
 
 .cardapio p {
     position: relative;
-    width: 110.44px;
-    height: 23px;
-    left: 15%;
+    left: 20%;
     top: 75px;
 
     font-family: 'Roboto';
@@ -129,16 +136,13 @@ section {
     font-weight: 700;
     font-size: 20px;
     line-height: 23px;
-
     color: #222222;
 }
 
 .cardapio ol {
     position: relative;
-    width: 135px;
-    height: 19px;
-    left: 5%;
-    top: 70px;
+    left: 15%;
+    top: 80px;
 
     font-family: 'Roboto';
     font-style: normal;
@@ -155,21 +159,20 @@ footer {
     position: absolute;
     width: 100%;
     height: 150px;
-    left: 0px;
     bottom: 0px;
 
     background: #222222;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
 }
 
 .footer-caixa img {
-    position: absolute;
-    width: 212px;
-    height: 80px;
-    left: 75%;
-    top: 30px;
-
+    width: auto;
+    padding-right: 20px;
 }
 
 .footer-caixa nav {
@@ -187,6 +190,12 @@ footer {
     color: #F3F3F3;
 }
 
-.footer-caixa span {
+.footer-caixa nav > a {
     text-decoration: none;
+    color: #ffffff;
+}
+
+.footer-caixa nav > a:hover {
+    color: #39b24a;
+    font-size: 18px;
 }
